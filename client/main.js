@@ -26,4 +26,9 @@ Template.hello.events({
     // increment the counter when button is clicked
     Meteor.call("addfield", "mycol1", "name", "hello" + Math.floor(Math.random() * 100000));
   },
+  'click #irrelevant'(event, instance) {
+    // increment the counter when button is clicked
+    Meteor.call("addfield", "mycol1", "irrelevant1", "hello" + Math.floor(Math.random() * 100000));
+  },
+  
 });
